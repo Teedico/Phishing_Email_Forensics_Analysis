@@ -1,5 +1,4 @@
 # Phishing_Email_Forensics_Analysis
-# Email Forensic Analysis Report
 
 ## Executive Summary:
 
@@ -33,7 +32,7 @@ Below is the list of tools used in the analysis:
 *   **Talos Intelligence:** used for IP address and domain lookups
 *   **VirusTotal:** used it to analyze URLs, domains, and IP addresses to identify potential threats.
 
----
+
 
 The image below shows the email received about an unusual sign-in activity on a Microsoft account [phishing@pot]. The sign-in occurred on August 16, 2023, from a Windows device in Moscow, Russia, with the IP address 103.225.77.255.
 
