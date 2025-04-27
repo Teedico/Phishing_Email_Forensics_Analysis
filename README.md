@@ -119,14 +119,14 @@ Below are the A records and MX records for Microsoft. The domain `accessaccsecur
 The results of this lookup showed that `access-accsecurity[.]com` was not present in Microsoft's A records. This mismatch indicates that the email claiming to be from Microsoft was not actually sent from a legitimate Microsoft domain, adding further evidence to its fraudulent nature.
 
 ![“A” records for outlook.com by MXtoolbox](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/%E2%80%9CA%E2%80%9D%20records%20for%20outlook.com(by%20MXtoolbox).jpg)
-*(“A” records for outlook.com(by MXtoolbox))*
+*(“A” records for outlook.comby MXtoolbox)*
 
-]![“MX” records,outlook.com by MXtoolbox](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/%E2%80%9CMX%E2%80%9D%20records%2Coutlook.com(by%20MXtoolbox).jpg)
+![“MX” records,outlook.com by MXtoolbox](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/%E2%80%9CMX%E2%80%9D%20records%2Coutlook.com(by%20MXtoolbox).jpg)
 *(“MX” records,outlook.com by MXtoolbox)*
 
 ## 6. Timestamp & Delivery Path Analysis
 
-]![Table showing Received Header Chain hops from Phishtool (repeated for context](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20phishtool%20%203.jpg)
+![Table showing Received Header Chain hops from Phishtool (repeated for context](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20phishtool%20%203.jpg)
 *(Image by phishtool)*
 
 The analysis of the email headers reveals inconsistencies in the timestamps, which are either too close together or show discrepancies. This strongly suggests that the delivery time was manipulated, especially considering the email's path. Despite originating from a suspicious IP address, the headers indicate that the email was forwarded through multiple Microsoft servers, which is unusual and further points to potential tampering to mask the email's true origin and deceive the recipient.
