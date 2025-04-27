@@ -36,7 +36,8 @@ Below is the list of tools used in the analysis:
 
 The image below shows the email received about an unusual sign-in activity on a Microsoft account [phishing@pot]. The sign-in occurred on August 16, 2023, from a Windows device in Moscow, Russia, with the IP address 103.225.77.255.
 
-[Image: Screenshot of the received phishing email Rendered HTML view by Phishtool]
+![Image by phishtool ](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20Phishtool.jpg)
+    *(Image by phishtool )*
 
 ## 1. Email MetaData Overview
 
@@ -60,12 +61,13 @@ Below is metadata about the received email:
 
 Domain lookup was performed to gain additional information about the originating IP address.
 
-[Image: Whois lookup for 89.144.44.41 by VirusTotal showing details for ROETH und BECK GbR]
-
+![whois lookup by VirusTotal ](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/whois%20lookup%20by%20VirusTotal.jpg)
+*(whois lookup by VirusTotal )*
 **b. Received Header Chain:**
 *   Below is the list of all servers (received headers) in order from origin to destination:
 
-[Image: Table showing Received Header Chain hops from Phishtool]
+[![Image by Phishtool  ](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20Phishtool%202.jpg)
+*(Image by Phishtool)*
 
 *   Total hops = 4
 
@@ -90,7 +92,8 @@ DKIM adds a digital signature to emails, which can be verified by the recipient'
 **DMARC (Domain-based Message Authentication, Reporting & Conformance)**
 DMARC builds on SPF and DKIM. It tells the receiving email server what to do with messages that fail SPF and DKIM checks (e.g., quarantine or reject). DMARC also provides a reporting mechanism so domain owners can see who is sending emails on their behalf. DMARC helps protect against phishing and email spoofing by providing clear instructions on how to handle unauthenticated emails.
 
-[Image: Screenshot of SPF, DKIM, DMARC checks from Phishtool showing None/Fail results]
+![SPF, DKIM, DMARC checks (by phishtool)](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/SPF%2C%20DKIM%2C%20DMARC%20checks%20(by%20phishtool).jpg)
+*(SPF, DKIM, DMARC checks (by phishtool) )*
 
 ## 4. Exchange Authentication Headers
 
@@ -112,13 +115,16 @@ Below are the A records and MX records for Microsoft. The domain `accessaccsecur
 
 The results of this lookup showed that `access-accsecurity[.]com` was not present in Microsoft's A records. This mismatch indicates that the email claiming to be from Microsoft was not actually sent from a legitimate Microsoft domain, adding further evidence to its fraudulent nature.
 
-[Image: MXToolbox A record lookup results for outlook.com]
+![“A” records for outlook.com(by MXtoolbox)](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/%E2%80%9CA%E2%80%9D%20records%20for%20outlook.com(by%20MXtoolbox).jpg)
+*(“A” records for outlook.com(by MXtoolbox))*
 
-[Image: MXToolbox MX record lookup results for outlook.com]
+]![“MX” records,outlook.com(by MXtoolbox) ](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/%E2%80%9CMX%E2%80%9D%20records%2Coutlook.com(by%20MXtoolbox).jpg)
+*(“MX” records,outlook.com(by MXtoolbox))*
 
 ## 6. Timestamp & Delivery Path Analysis
 
-[Image: Table showing Received Header Chain hops from Phishtool (repeated for context)]
+]![Table showing Received Header Chain hops from Phishtool (repeated for context](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20phishtool%20%203.jpg)
+*(Image by phishtool)*
 
 The analysis of the email headers reveals inconsistencies in the timestamps, which are either too close together or show discrepancies. This strongly suggests that the delivery time was manipulated, especially considering the email's path. Despite originating from a suspicious IP address, the headers indicate that the email was forwarded through multiple Microsoft servers, which is unusual and further points to potential tampering to mask the email's true origin and deceive the recipient.
 
@@ -127,7 +133,8 @@ The analysis of the email headers reveals inconsistencies in the timestamps, whi
 **URL:**
 The analysis revealed an embedded tracking pixel in the email. Below is the image:
 
-[Image: HTML code snippet of the img tag for the tracking pixel from EML Analyzer]
+![HTML code snippet of the img tag for the tracking pixel from EML Analyzer](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20EML%20Analyzer.jpg)
+*(  Image by EML Analyzer )*
 `<img alt="" src="http://thebandalisty.com/track/o41799GCMXp22448528DkRM49413Hwr34421lnRD176" width="1px" height="1px" style="visibility:hidden">`
 
 **What is this?**
@@ -149,15 +156,18 @@ The purpose of these tracking pixels is typically used in marketing emails, phis
 
 The URL was subsequently searched on VirusTotal to gain further insight. The results, as shown below, indicate that four vendors have flagged the URL as malicious.
 
-[Image: VirusTotal scan result page for the tracking pixel URL, showing 4/97 detections]
+![Image: VirusTotal scan result page for the tracking pixel URL, showing 4/97 detection](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20virusTotal.jpg)
+*( Image by virusTotal)*
 
-[Image: VirusTotal redirection chain for the tracking pixel URL]
+![Image: VirusTotal redirection chain for the tracking pixel URL](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20virusTotal%202.jpg)
+*( Image by virusTotal)*
 
 **Domain:**
 Analysis also revealed an embedded domain in the email, which is **sign.in**.
 Clicking the link directs the user to a fake login page, designed to steal their credentials.
 
-[Image: Screenshot of the fake sign.in page from URLscan]
+![Image: Screenshot of the fake sign.in page from URLscan]![whois lookup by VirusTotal ](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/sign.in%20page%20(by%20URLscan).jpg)
+*( sign.in page (by URLscan))*
 
 ## Overall Assessment
 
