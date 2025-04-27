@@ -67,6 +67,7 @@ Domain lookup was performed to gain additional information about the originating
 **b. Received Header Chain:**
 *   Below is the list of all servers (received headers) in order from origin to destination:
 
+
 [![Image by Phishtool](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20Phishtool%202.jpg)
 *(Image by Phishtool)*
 
@@ -95,6 +96,7 @@ DMARC builds on SPF and DKIM. It tells the receiving email server what to do wit
 
 
 ![SPF, DKIM, DMARC checks (by phishtool)](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/SPF%2C%20DKIM%2C%20DMARC%20checks%20(by%20phishtool).jpg)
+
 *(SPF, DKIM, DMARC checks by phishtool)*
 
 ## 4. Exchange Authentication Headers
