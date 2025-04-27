@@ -63,6 +63,7 @@ Domain lookup was performed to gain additional information about the originating
 
 ![whois lookup by VirusTotal ](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/whois%20lookup%20by%20VirusTotal.jpg)
 *(whois lookup by VirusTotal )*
+
 **b. Received Header Chain:**
 *   Below is the list of all servers (received headers) in order from origin to destination:
 
