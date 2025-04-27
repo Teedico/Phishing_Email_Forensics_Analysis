@@ -67,7 +67,7 @@ Domain lookup was performed to gain additional information about the originating
 **b. Received Header Chain:**
 *   Below is the list of all servers (received headers) in order from origin to destination
       
-[![Image by Phishtool](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20Phishtool%202.jpg)
+![Image by Phishtool](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20Phishtool%202.jpg)
 *(Image by Phishtool)*
 
 *   Total hops = 4
@@ -170,6 +170,7 @@ Analysis also revealed an embedded domain in the email, which is **sign.in**.
 Clicking the link directs the user to a fake login page, designed to steal their credentials.
 
 ![Image: Screenshot of the fake sign.in page from URLscan]![whois lookup by VirusTotal ](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/sign.in%20page%20(by%20URLscan).jpg)
+
 *(sign.in page by URLscan)*
 
 ## Overall Assessment
