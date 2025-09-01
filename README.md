@@ -159,7 +159,7 @@ The purpose of these tracking pixels is typically used in marketing emails, phis
 
 The URL was subsequently searched on VirusTotal to gain further insight. The results, as shown below, indicate that four vendors have flagged the URL as malicious.
 
-![Image: VirusTotal scan result page for the tracking pixel URL, showing 4/97 detection](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20virusTotal.jpg)
+![Image: VirusTotal scan result page for the tracking pixel URL, showing 4/97 detection](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/3e754ef482184d0c132333b1a6d6a284f96b4f53/Image%20by%20virusTotal%20(2).jpg)
 *(Image by virusTotal)*
 
 ![Image: VirusTotal redirection chain for the tracking pixel URL](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/Image%20by%20virusTotal%202.jpg)
