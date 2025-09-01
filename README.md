@@ -1,4 +1,4 @@
-# Phishing_Email_Forensics_Analysis
+# Phishing Email Forensics Analysis
 
 ## Executive Summary:
 
