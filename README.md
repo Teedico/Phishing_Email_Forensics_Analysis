@@ -150,7 +150,7 @@ The purpose of these tracking pixels is typically used in marketing emails, phis
 *   Fingerprint the user for further tracking
 
 **Dissecting the Code:**
-*   **hxxp://thebandalisty.com/track/o41799GCMXp22448528DkRM49413Hwr34421InRD176**
+*   **http://thebandalisty.com/track/o41799GCMXp22448528DkRM49413Hwr34421InRD176**
     This URL is the endpoint being hit when the email is opened. When your email client loads images (automatically or manually), it contacts that server, logging your interaction.
 *   **width="1px" height="1px"**
     Makes it tiny and unnoticeable
