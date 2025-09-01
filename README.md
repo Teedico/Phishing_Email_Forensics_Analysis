@@ -4,9 +4,9 @@
 
 A suspicious email purporting to be a Microsoft account security notification was received and subjected to forensic analysis. The email, titled "Microsoft account unusual sign-in activity," was crafted to imitate legitimate Microsoft communications but failed critical authentication checks, indicating it was a phishing attempt.
 
-Analysis of the email headers revealed that the message originated from an IP address in Germany (89[.]144[.]44[.]41) associated with a hosting provider known for abuse and malicious activity. The domain used to send the email, access-accsecurity.com, is unaffiliated with Microsoft and showed no valid SPF, DKIM, or DMARC authentication, allowing for easy spoofing. Moreover, the "Reply-To" address directed responses to a free Gmail account, further highlighting the malicious intent behind the communication.
+Analysis of the email headers revealed that the message originated from an IP address in Germany (89.144.44.41) associated with a hosting provider known for abuse and malicious activity. The domain used to send the email, access-accsecurity.com, is unaffiliated with Microsoft and showed no valid SPF, DKIM, or DMARC authentication, allowing for easy spoofing. Moreover, the "Reply-To" address directed responses to a free Gmail account, further highlighting the malicious intent behind the communication.
 
-The email's structure included social engineering tactics designed to create urgency, including claims of a suspicious login from Russia, and embedded an invisible tracking pixel hosted on a non-Microsoft domain (thebandalisty[.]com). These elements indicate a high level of threat aimed at compromising user credentials or gathering reconnaissance information.
+The email's structure included social engineering tactics designed to create urgency, including claims of a suspicious login from Russia, and embedded an invisible tracking pixel hosted on a non-Microsoft domain (thebandalisty.com). These elements indicate a high level of threat aimed at compromising user credentials or gathering reconnaissance information.
 
 Based on the findings, the email has been classified as phishing and spoofed. Immediate action has been recommended, including blocking the sender domain and IP address, alerting internal users, submitting the phishing email to Microsoft, enhancing email authentication checks, and monitoring for similar threats. These proactive measures will help mitigate risk, prevent further exposure, and strengthen the organization's resilience against future phishing campaigns.
 
@@ -55,9 +55,9 @@ Below is metadata about the received email:
 ## 2. IP Address Analysis and Mail Flow
 
 **a. Originating IP Address**
-*   IP: 89[.]144[.]44[.]41 (atujpdfghher.co[.]uk)
+*   IP: 89.144.44.41 (atujpdfghher.co.uk)
 *   Geo-Location: Bad Homburg, Germany
-*   Does this match the sender's domain? It does not match the "sender "domain accessaccsecurity[.]com or any Microsoft infrastructure.
+*   Does this match the sender's domain? It does not match the "sender "domain accessaccsecurity.com or any Microsoft infrastructure.
 
 Domain lookup was performed to gain additional information about the originating IP address.
 
@@ -109,14 +109,14 @@ The X-MS-Exchange-Organization-AuthAs header indicates how the sender was authen
 
 ## 5. Sender and Domain Validation
 
-**Stated sender =** `no-reply@access-accsecurity[.]com`
-**Reply-To=** `solutionteamrecognizd03@gmail[.]com`
+**Stated sender =** `no-reply@access-accsecurity.com`
+**Reply-To=** `solutionteamrecognizd03@gmail.com`
 
-The email's sender domain, `access-accsecurity[.]com`, doesn't match Microsoft's, and it's not a recognized Microsoft domain, which raises suspicions. Additionally, the use of a free Gmail address for replies in a supposed "Microsoft" security alert is a major warning sign, further indicating the email's fraudulent nature.
+The email's sender domain, `access-accsecurity.com`, doesn't match Microsoft's, and it's not a recognized Microsoft domain, which raises suspicions. Additionally, the use of a free Gmail address for replies in a supposed "Microsoft" security alert is a major warning sign, further indicating the email's fraudulent nature.
 
-Below are the A records and MX records for Microsoft. The domain `accessaccsecurity[.]com` was examined and compared against Microsoft's official records. This involved checking both A records, which map domain names to IP addresses, and MX records, which specify the mail servers responsible for handling a domain's email.
+Below are the A records and MX records for Microsoft. The domain `accessaccsecurity.com` was examined and compared against Microsoft's official records. This involved checking both A records, which map domain names to IP addresses, and MX records, which specify the mail servers responsible for handling a domain's email.
 
-The results of this lookup showed that `access-accsecurity[.]com` was not present in Microsoft's A records. This mismatch indicates that the email claiming to be from Microsoft was not actually sent from a legitimate Microsoft domain, adding further evidence to its fraudulent nature.
+The results of this lookup showed that `access-accsecurity.com` was not present in Microsoft's A records. This mismatch indicates that the email claiming to be from Microsoft was not actually sent from a legitimate Microsoft domain, adding further evidence to its fraudulent nature.
 
 ![“A” records for outlook.com by MXtoolbox](https://github.com/Teedico/Phishing_Email_Forensics_Analysis/blob/c50f4410d10e8e31ce8dc651914e62df39dc73e0/%E2%80%9CA%E2%80%9D%20records%20for%20outlook.com(by%20MXtoolbox).jpg)
 *(“A” records for outlook.comby MXtoolbox)*
