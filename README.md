@@ -150,7 +150,7 @@ The purpose of these tracking pixels is typically used in marketing emails, phis
 *   Fingerprint the user for further tracking
 
 **Dissecting the Code:**
-*   **hxxp[://]thebandalisty[.]com/track/o41799GCMXp22448528DkRM49413Hwr34421InRD176**
+*   **hxxp://thebandalisty.com/track/o41799GCMXp22448528DkRM49413Hwr34421InRD176**
     This URL is the endpoint being hit when the email is opened. When your email client loads images (automatically or manually), it contacts that server, logging your interaction.
 *   **width="1px" height="1px"**
     Makes it tiny and unnoticeable
@@ -179,7 +179,7 @@ This email is a clear and deliberate phishing attempt designed to impersonate Mi
 
 Moreover, all major email authentication checks have failed or are missing. SPF returned 'None', DKIM is absent, and DMARC resulted in a permanent error, which means the domain is either misconfigured or lacks enforcement. These failures indicate the sender's domain cannot be trusted and is susceptible to spoofing. The X-MS-Exchange-Organization-AuthAs: Anonymous header confirms that the message was not authenticated when it entered the recipient's environment, further reinforcing that this message likely originated from outside the organization without verification.
 
-Additionally, the originating IP address (89[.]144[.]44[.]41) traces back to a provider known for hosting suspicious or abusive content, and it is geolocated to Germany, which is inconsistent with Microsoft's global mail routing infrastructure. There is also a hidden tracking pixel hosted on a suspicious third-party domain (thebandalisty[.]com), commonly used in phishing to monitor user interaction with the email. Taken together, the spoofed brand appearance, authentication failures, mismatched domains, and obfuscated tracking behavior confirm this is a malicious phishing email attempting to socially engineer the recipient into replying or engaging with a fraudulent support address.
+Additionally, the originating IP address (89.14.44.41) traces back to a provider known for hosting suspicious or abusive content, and it is geolocated to Germany, which is inconsistent with Microsoft's global mail routing infrastructure. There is also a hidden tracking pixel hosted on a suspicious third-party domain (thebandalisty.com), commonly used in phishing to monitor user interaction with the email. Taken together, the spoofed brand appearance, authentication failures, mismatched domains, and obfuscated tracking behavior confirm this is a malicious phishing email attempting to socially engineer the recipient into replying or engaging with a fraudulent support address.
 
 ## Recommended Improvements:
 
